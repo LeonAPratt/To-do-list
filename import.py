@@ -2,9 +2,11 @@ import json
 
 def importTaskFile(filename):
     file = ""
-    with open(filename, "r") as f:
-        file = f.read()
-
+    try:
+        with open(filename, "r") as f:
+            file = f.read()
+    except:
+        return "File does not exist"
     jsondata = json.loads(file)
     tasknames = list(jsondata.keys())
     
