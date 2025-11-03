@@ -2,8 +2,8 @@ import json
 def exportTasks(tasks, filename):
     fileObject = {}
     for task in tasks:
-        name = task["Name"]
-        del task["Name"]
+        name = task["name"]
+        del task["name"]
         fileObject[name] = task
 
 

@@ -11,7 +11,7 @@ def importTaskFile(filename):
     tasks = []
     for name in tasknames:
         taskdata = jsondata[name]
-        taskdata["Name"] = name
+        taskdata["name"] = name
         tasks.append(taskdata)
 
     return tasks
