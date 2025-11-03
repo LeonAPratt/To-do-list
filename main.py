@@ -6,10 +6,13 @@ import view_tasks
 import mark_complete
 
 def menu(taskfile,tasks):
+    tasks = importFile.importTaskFile(taskfile)
     option = int(input("Menu:\n(1) Add a task\n(2) Mark tast as completed\n(3) view tasks\n"))
     match option:
         case 1:
+            print(tasks)
             add_task.add_task(tasks)
+            print(tasks)
             exportFile.exportTasks(tasks, taskfile)
             os.system('cls' if os.name=='nt' else 'clear')
             menu(taskfile, tasks)
