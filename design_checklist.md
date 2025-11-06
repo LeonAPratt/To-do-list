@@ -1,8 +1,8 @@
 # To-Do List Application - Design Document
 
-**Team Name**: _________________
+**Team Name**: SixSeven
 
-**Team Members**: _________________
+**Team Members**: Kieran Cahill and Leon Pratt
 
 **Date**: _________________
 
@@ -14,18 +14,19 @@
 After exploring existing to-do list applications (Microsoft To-Do, Trello, GitHub Projects, etc.), we observed the following common features:
 
 **What can these applications do?**
--
--
--
+- add tasks. to the list
+- delete tasks
+- mark tasks as done
+
 
 **What data do they store?**
--
--
+-tasks that are added are saved so there will be a saved file for tasks
+-Might be a database containing log in details
 -
 
 **How do they display data?**
--
--
+-graphically in a table
+-maybe a list
 -
 
 ---
@@ -33,23 +34,23 @@ After exploring existing to-do list applications (Microsoft To-Do, Trello, GitHu
 ### 1.2 Essential Features
 List the features your to-do list MUST have to be functional:
 
-1.
-2.
-3.
-4.
-5.
+1.add task function
+2.mark task as done
+3.save task
+4.load in previous task
+5.view task and menu 
 
 **Why are these essential?**
-
+they are the basic features of a to do list and are needed for a user to function it as one, e.g the save and load feature allows their tasks to be saved for when they come back to see the tasks they previously set themeslevs
 
 ---
 
 ### 1.3 Desirable Features
 List nice-to-have features that would enhance the application but aren't strictly necessary:
 
-1.
-2.
-3.
+1.Task prioty
+2.view tasks in date order / priorty order
+3.reminder notifications
 4.
 
 ---
@@ -61,7 +62,7 @@ What information does each individual task need to store?
 
 | Data Field | Data Type | Purpose | Example |
 |------------|-----------|---------|---------|
-| | | | |
+|             |          |         |         |
 | | | | |
 | | | | |
 
